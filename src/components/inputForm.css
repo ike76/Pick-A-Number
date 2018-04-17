@@ -1,7 +1,8 @@
 .guessBox{
 	text-align: center;
 	font-size: 1.5rem;
-	background-color: #a1d6e2;
+	/*background-color: #a1d6e2;*/
+	width: 3rem;
 }
 button{
 	display: block;
@@ -11,4 +12,12 @@ button{
 }
 .form{
 	padding: 1rem;
+}
+.finalSentence{
+	text-align: center;
+}
+.bigNumber{
+	font-size: 2rem;
+    border: 1px white solid;
+    padding: 5px;
 }

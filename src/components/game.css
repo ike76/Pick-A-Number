@@ -6,9 +6,9 @@
 
 .instructions{
 	background-color: #1995ad;
-/*	height: 6rem;
-	width: 100%;*/
-	text-align: center;
+    text-align: center;
+    border: 1px white solid;
+    border-radius: 3rem;
 }
 .guessHistory{
 	background-color: #a1d6e2;

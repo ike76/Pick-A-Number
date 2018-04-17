@@ -6,13 +6,12 @@ header{
 	width: 100%;
 }
 .gameSquare{
-	/*width: 400px;*/
-	/*height: 500px;*/
-	margin: 100px auto;
-	background-color: #bcbabe;
-	border-radius: 10px;
-	padding: .5rem;
-	border: 2px solid white;
+    margin: 100px auto;
+    background-color: #bcbabe7a;
+    border-radius: 3.5rem 3.5rem 5px 5px;
+    padding: .5rem;
+    border: 2px solid white;
+    max-width: 35rem;
 }
 /*
 blue: #4cb5f5

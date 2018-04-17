@@ -16,7 +16,7 @@ export default class Game extends Component {
 	}
 	addGuess(value){
 		let diff = Math.abs(this.state.correctAnswer - value)
-		let message = "coooool babe 🕶"
+		let message = "frosty"
 		if (diff < 15) {message='warm...'}
 		if (diff < 10) {message='very warm...'}
 		if (diff < 5) {message='HOT HOT HOT!!'}
