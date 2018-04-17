@@ -1,0 +1,39 @@
+.numberGrid {
+	background-color: white;
+	display: grid;
+	/*width: 100%;*/
+	grid-template-columns: repeat(25, 1fr)
+
+}
+.numberGrid div {
+	font-size: small;
+	padding: 1px;
+	text-align: center;
+	border: 1px lightgrey solid;
+	cursor: pointer;
+}
+.numberGrid div.cool{
+	background-color: #2a87ff;
+}
+.numberGrid div.warm{
+	background-color: #e2c425;
+}
+.numberGrid div.hot{
+	background-color: #e25b25;
+}
+.numberGrid div.smokin{
+	background-color: #ff0000;
+}
+.numberGrid div.correct{
+	background-color: #ff0000;
+	border: 2px solid black;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.guessed{
+	background-color: #a0d6e2;
+}
+
+
+/*#a1d6e2*/

@@ -1,0 +1,14 @@
+.guessBox{
+	text-align: center;
+	font-size: 1.5rem;
+	background-color: #a1d6e2;
+}
+button{
+	display: block;
+	font-size: 1.5rem;
+	padding: .5rem 1rem;
+	margin: 1rem auto;
+}
+.form{
+	padding: 1rem;
+}

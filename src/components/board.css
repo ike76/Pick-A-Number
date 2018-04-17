@@ -1,0 +1,28 @@
+.container{
+	padding: 2rem;
+	background-color: #f1f1f2;
+}
+header{
+	width: 100%;
+}
+.gameSquare{
+	/*width: 400px;*/
+	/*height: 500px;*/
+	margin: 100px auto;
+	background-color: #bcbabe;
+	border-radius: 10px;
+	padding: .5rem;
+	border: 2px solid white;
+}
+/*
+blue: #4cb5f5
+grey: #b7b8b6
+darkblue: #34675C
+lightgreen: #B3C100
+*/
+/*
+overcastsky: #f1f1f2
+grey: #bcbabe
+ltblue #a1d6e2
+blue #1995ad
+*/
