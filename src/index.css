@@ -3,6 +3,9 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  background-image: url('./images/9343.jpg');
+  background-size: cover;
+  /*background-color: lightgrey;*/
 }
 
 h2 {
