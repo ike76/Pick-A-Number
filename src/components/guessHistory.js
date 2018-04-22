@@ -2,23 +2,38 @@ import React from 'react'
 import './guessHistory.css'
 import NumberSquare from './numberSquare'
 export default function GuessHistory(props){
-	let numberDivs = []
 	const correctAnswer = props.correctAnswer
-	for(let i = 1; i<=100; i++ ){
-		const diff = Math.abs(correctAnswer - i)
+	const numberDivs = [...Array(100).keys()].map((num, i)=> {
+		const diff = Math.abs(correctAnswer - i-1)
 		let temperature;
-		if (props.history.includes(i)){
-			temperature = 'cool'
-			if(diff<15) temperature = 'warm'
-			if(diff<10) temperature = 'hot'
-			if(diff<5) temperature = 'smokin'
-			if(diff===0) temperature = 'correct'
-		} 
-		numberDivs.push(<NumberSquare key={i} number={i} temperature={temperature} clicker={()=>props.getGuess(i)} />)
-	}
+		if (props.history.includes(i+1)){
+			switch (true) {
+				case (diff===0):
+					temperature = 'correct';
+					break
+				case (diff<5):
+					temperature = 'smokin';
+					break
+				case (diff<10):
+					temperature = 'hot';
+					break
+				case (diff<15):
+					temperature = 'warm';
+					break
+				default:
+					temperature = 'cool';
+					break
+			}
+		}
+		return <NumberSquare key={i} number={i+1} temperature={temperature} clicker={()=>props.getGuess(i+1)} />
+		
+	})
+	
 	return (
 		<div className='numberGrid'>
 			{numberDivs}
 		</div>
 		)
 }
+
+

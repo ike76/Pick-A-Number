@@ -42,7 +42,7 @@ export default class Game extends Component {
 			<div className="game">
 				<Instructions message={this.state.message} finished={this.state.finished} startOver={()=>{this.startOver()}} />
 				<InputForm onChange={value=> this.addGuess(value)} count={this.state.guesses.length} finished={this.state.finished}  />
-				<GuessHistory history={this.state.guesses} correctAnswer={this.state.correctAnswer} getGuess={num=>this.addGuess(num)} />
+				<GuessHistory history={this.state.guesses} correctAnswer={this.state.correctAnswer} getGuess={num => this.addGuess(num)} />
 
 			</div>
 			)
